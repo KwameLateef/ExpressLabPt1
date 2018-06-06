@@ -2,17 +2,18 @@
 const cart = {
     template:`
     <section class="" ng-repeat="product in $ctrl.item">
-    <input ng-blur="$ctrl.updateItem(product);" ng-model="product.product">  <input ng-blur="$ctrl.updateItem(product);" ng-model="product.price">
-    <input ng-blur="$ctrl.updateItem(product);" ng-model="product.quantity">
-    <a href="" ng-click="$ctrl.deleteItem(product.id);">Delete</a>
+        <input class="product" ng-blur="$ctrl.updateItem(product);" ng-model="product.product">  
+        <input class="price" ng-blur="$ctrl.updateItem(product);" ng-model="product.price">
+        <input class="quantity" ng-blur="$ctrl.updateItem(product);" ng-model="product.quantity">
+        <a href="" ng-click="$ctrl.deleteItem(product.id);">Delete</a>
     </section>
     
     
     <form ng-submit="$ctrl.addItem($ctrl.newItem);">
-    <input type="text" placeholder="Product" ng-model="$ctrl.newItem.product">
-    <input type="text" placeholder="Price" ng-model="$ctrl.newItem.Price">
-    <input type="text" placeholder="Quantity" ng-model="$ctrl.newItem.quantity>
-    <button>Add Item</button>
+        <input class="product2" type="text" placeholder="Product" ng-model="$ctrl.newItem.product">
+        <input class="price2" type="text" placeholder="Price" ng-model="$ctrl.newItem.Price">
+        <input class="quantity2" type="text" placeholder="Quantity" ng-model="$ctrl.newItem.quantity>
+        <button>Add Item</button>
     </form>
     `,
 
