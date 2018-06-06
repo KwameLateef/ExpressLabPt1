@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: rgb(160, 99, 216);
 }
@@ -21,10 +31,27 @@ body {
     margin-top: 50px;
 }
 
-  .price {
+.price {
     display: flex;
-  }
+    justify-content: center;
+}
 
-  .quantity {
+.quantity {
     display: flex;
-  }
+    justify-content: center;
+}
+
+.product2 {
+    display: flex;
+    justify-content: center;
+}
+
+.price2 {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+}

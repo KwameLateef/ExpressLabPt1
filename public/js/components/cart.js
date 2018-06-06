@@ -1,7 +1,8 @@
 "use strict";
 const cart = {
     template:`
-    <section class="" ng-repeat="product in $ctrl.item">
+    <section class="container" ng-repeat="product in $ctrl.item">
+        <div>
         <input class="product" ng-blur="$ctrl.updateItem(product);" ng-model="product.product">  
         <input class="price" ng-blur="$ctrl.updateItem(product);" ng-model="product.price">
         <input class="quantity" ng-blur="$ctrl.updateItem(product);" ng-model="product.quantity">
@@ -9,11 +10,11 @@ const cart = {
     </section>
     
     
-    <form ng-submit="$ctrl.addItem($ctrl.newItem);">
+    <form class="form" ng-submit="$ctrl.addItem($ctrl.newItem);">
         <input class="product2" type="text" placeholder="Product" ng-model="$ctrl.newItem.product">
         <input class="price2" type="text" placeholder="Price" ng-model="$ctrl.newItem.Price">
         <input class="quantity2" type="text" placeholder="Quantity" ng-model="$ctrl.newItem.quantity>
-        <button>Add Item</button>
+        <button type="submit">Add Item</button>
     </form>
     `,
 
