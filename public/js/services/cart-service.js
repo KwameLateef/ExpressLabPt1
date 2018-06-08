@@ -1,4 +1,4 @@
-"use strict";
+"use strict";//Speaks with front-end with components
 function CartService($http) {
     const getAllItems = () => {
         return $http({
